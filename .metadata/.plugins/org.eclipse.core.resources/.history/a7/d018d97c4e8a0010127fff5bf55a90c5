@@ -1,0 +1,15 @@
+package aula05;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Automovel a1 = new Automovel();
+		a1.setModelo("Ka");;
+		a1.setMarca("Ford");
+		a1.setAno(2021);			
+		
+		a1.ligar();
+	}
+
+}
