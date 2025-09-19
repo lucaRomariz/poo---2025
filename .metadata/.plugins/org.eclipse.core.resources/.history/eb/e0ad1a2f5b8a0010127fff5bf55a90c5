@@ -1,0 +1,45 @@
+package atividade02;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Cachorro a1 = new Cachorro();
+		
+		a1.setNome("Xandão");
+		a1.setIdade(9);
+		a1.setPeso(35);
+		a1.setHabitat("Roça");
+		a1.setRaca("Vira-lata");
+
+		Gato a2 = new Gato();
+		
+		a2.setNome("Lucas");
+		a2.setIdade(7);
+		a2.setPeso(13);
+		a2.setHabitat("Cidade");
+		a2.setCor("Bege");
+		
+		Leao a3 = new Leao();
+		
+		a3.setNome("Neiva");
+		a3.setIdade(14);
+		a3.setPeso(55);
+		a3.setHabitat("Savana");
+		a3.setTamanhoJuba(25);
+		
+		System.out.println("o animal é:" + a1.getNome() + "ele é um " + a1.getClass());
+		a1.emitirSom();
+		System.out.println("ele se alimenta de " + a1.alimentar());
+		
+		System.out.println("o animal é" + a2.getNome() + "ele é um " + a2.getClass());
+		a2.emitirSom();
+		System.out.println("ele se alimenta de " + a2.alimentar());
+		
+		System.out.println("o animal é" + a3.getNome() + "ele é um " + a3.getClass());
+		a3.emitirSom();
+		System.out.println("ele se alimenta de " + a3.alimentar());
+		
+	}
+
+}
