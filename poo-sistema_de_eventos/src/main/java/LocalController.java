@@ -31,8 +31,7 @@ public class LocalController {
 	@DeleteMapping("/{id}")
 	public void deletarLocal(@PathVariable Long id) {
 		localRepository.deleteById(id);
-		
-	}
+		}
 	
 	@PutMapping("/{id}")
 	public Local atualizarLocal(@PathVariable Long id, @RequestBody Local novoLocal) {
@@ -40,7 +39,6 @@ public class LocalController {
 		if (optionalLocal.isPresent()) {
 			Local local = optionalLocal.get();
 			local.setNome(novoLocal.getNome());
-			local.setEndereco(novoLocal.getEndereco());
 			local.setEndereco(novoLocal.getEndereco());
 		}
 		return null;
